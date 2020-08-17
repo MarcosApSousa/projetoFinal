@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Home</title>
+
+
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/estilo.css" rel="stylesheet">
+
+
+
+
+
+  <script src="jquery/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+      function valida_email(){
+var usuario = document.getElementById("email").value.substring(0, document.getElementById("email").value.indexOf("@"));
+var dominio = document.getElementById("email").value.substring(document.getElementById("email").value.indexOf("@")+ 1, document.getElementById("email").value.length);
+if ((usuario.length >=1) &&
+    (dominio.length >=3) && 
+    (usuario.search("@")==-1) && 
+    (dominio.search("@")==-1) &&
+    (usuario.search(" ")==-1) && 
+    (dominio.search(" ")==-1) &&
+    (dominio.search(".")!=-1) &&      
+    (dominio.indexOf(".") >=1)&& 
+    (dominio.lastIndexOf(".") < dominio.length - 1)) {
+alert("Email está válido");
+}
+else{
+alert("E-mail está inválido");
+document.getElementById('email').value = "";
+}
+}
+
+function formata_telefone()
+{
+  
+var tel = document.getElementById("tel").value;
+  const parte1 = "("+tel.substring(0,2 )+")" ;
+  const parte2 = tel.substring(2,7);
+  const parte3 = "-"+tel.substring(7,11);
+  var total = parte1+parte2+parte3; 
+  document.getElementById("tel").value = total;
+
+}
+  </script>
+
+
+</head>
+
+<body style="background-color:rgb(187, 255, 85)">
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right"
+      style="background-image: url(https://btc.com.br/wp-content/uploads/2019/10/grama.jpg);" id="sidebar-wrapper">
+      <div class="sidebar-heading">
+        <a class="navbar-brand" href="#"><img
+            src="https://http2.mlstatic.com/adesivo-letra-m-em-neon-art-decor-30-cm-x-42-cm-D_NQ_NP_900667-MLB41350751846_042020-F.jpg"
+            class="img-fluid img-thumbnail" width=200 height="200" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#minha_nav_bar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="list-group list-group-flush">
+        <a href="home.html" class="list-group-item list-group-item-action bg-light">Home</a>
+        <a href="galeria.html" class="list-group-item list-group-item-action bg-light">Galeria</a>
+        <a href="cadastro.html" class="list-group-item list-group-item-action bg-light">Cadastro</a>
+        <a href="contato.html" class="list-group-item list-group-item-action bg-light">Contato</a>
+        <a href="preco.html" class="list-group-item list-group-item-action bg-light">Preços</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <button class="btn btn-primary" id="menu-toggle">Esconder Menu</button>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="container-fluid">
+        <h1 class="mt-4">MS Agência de Futebol</h1>
+
+      </div>
+      <div container style="margin:3%">
+
+        <div class="row">
+            <div class="col-lg-3">
+
+            </div>
+            <div class="col-lg-6">
+
+                <form method="post" action="">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" name="nome" id="nome">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" class="form-control" name="sobrenome" id="sobrenome">
+                        </div>
+                    </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="data">Data Nascimento</label>
+                                <input type="date" class="form-control" name="data" id="data">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Sexo</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="opcao1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Masculino</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="opcao2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Feminino</label>
+                                </div>
+
+                            </div>
+                        </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email</label>
+                                    <input class="form-control" type="email" onblur="valida_email()" name="email" id="email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="tel">Telefone</label>
+                                    <input class="form-control" onblur="formata_telefone()" type="tel" name="tel" id="tel" >
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="endereco">Endereço</label>
+                            <input class="form-control" type="text" name="endereco" id="endereco">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="num">Número</label>
+                            <input type="number" class="form-control" name="num" id="num">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="estado">Estado</label>
+                            <select id="estado" class="form-control" name="estado">
+                                <option value="SP">São Paulo</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="ES">Espirito Santo</option>
+                            </select>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button><br><br>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
