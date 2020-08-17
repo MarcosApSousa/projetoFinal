@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home</title>
+
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/estilo.css" rel="stylesheet">
+
+
+
+
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+</head>
+
+<body style="background-color:rgb(187, 255, 85)">
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right"
+            style="background-image: url(https://btc.com.br/wp-content/uploads/2019/10/grama.jpg);"
+            id="sidebar-wrapper">
+            <div class="sidebar-heading">
+                <a class="navbar-brand" href="#"><img
+                        src="https://http2.mlstatic.com/adesivo-letra-m-em-neon-art-decor-30-cm-x-42-cm-D_NQ_NP_900667-MLB41350751846_042020-F.jpg"
+                        class="img-fluid img-thumbnail" width=200 height="200" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#minha_nav_bar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="home.html" class="list-group-item list-group-item-action bg-light">Home</a>
+                <a href="galeria.html" class="list-group-item list-group-item-action bg-light">Galeria</a>
+                <a href="cadastro.html" class="list-group-item list-group-item-action bg-light">Cadastro</a>
+                <a href="contato.html" class="list-group-item list-group-item-action bg-light">Contato</a>
+                <a href="preco.html" class="list-group-item list-group-item-action bg-light">Preços</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <button class="btn btn-primary" id="menu-toggle">Esconder Menu</button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="container-fluid">
+                <h1 class="mt-4">MS Agência de Futebol</h1>
+                <h2 class="mt-4 text-center">Galeria de fotos</h2>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin: 5%;">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                            src="https://caiobasc.com/wp-content/uploads/2019/08/futebol-jogadores-ex-670x476.jpg"
+                            alt="Primeiro Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Presença em eventos</h5>
+                            <p>Agenciamos eventos com grandes marcas para o desenvolvimento da imagem profissional do
+                                jogador</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://s2.glbimg.com/7oawj46ojZXMWUU7sUa50nHpq6k=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2018/W/0/zc1QkRSsaspcOtGBb09w/rodinei-novo-contrato.jpg"
+                            alt="Segundo Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Grandes Tranferências</h5>
+                            <p>Já realizamos diversas Tranferências para grandes clubes do Brasil </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://wearejoga.com/blog/wp-content/uploads/2017/04/pexels-photo-274422.jpg"
+                            alt="Terceiro Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Desenvolvimento profissional de jogadores desde a base</h5>
+                            <p>Temos trabalhos específicos de jogadores de base com grandes potenciais</p>
+                        </div>
+                    </div>
+                </div>
+            
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>
