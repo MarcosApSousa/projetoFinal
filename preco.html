@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Home</title>
+
+
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/estilo.css" rel="stylesheet">
+
+
+
+
+
+  <script src="jquery/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+</head>
+
+<body style="background-color:rgb(187, 255, 85)">
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right"
+      style="background-image: url(https://btc.com.br/wp-content/uploads/2019/10/grama.jpg);" id="sidebar-wrapper">
+      <div class="sidebar-heading">
+        <a class="navbar-brand" href="#"><img
+            src="https://http2.mlstatic.com/adesivo-letra-m-em-neon-art-decor-30-cm-x-42-cm-D_NQ_NP_900667-MLB41350751846_042020-F.jpg"
+            class="img-fluid img-thumbnail" width=200 height="200" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#minha_nav_bar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="list-group list-group-flush">
+        <a href="home.html" class="list-group-item list-group-item-action bg-light">Home</a>
+        <a href="galeria.html" class="list-group-item list-group-item-action bg-light">Galeria</a>
+        <a href="cadastro.html" class="list-group-item list-group-item-action bg-light">Cadastro</a>
+        <a href="contato.html" class="list-group-item list-group-item-action bg-light">Contato</a>
+        <a href="preco.html" class="list-group-item list-group-item-action bg-light">Preços</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <button class="btn btn-primary" id="menu-toggle">Esconder Menu</button>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="container-fluid">
+        <h1 class="mt-4">MS Agência de Futebol</h1>
+
+      </div>
+      <div class="container text-center">
+        <h2>Conheça nossos serviços!!!</h2></br></br>
+        <div class="row" style="margin: 10%;">
+          <div class="col-sm-4">
+            <div class="caixa-texto">
+              <img src="https://http2.mlstatic.com/adesivo-letra-m-em-neon-art-decor-30-cm-x-42-cm-D_NQ_NP_900667-MLB41350751846_042020-F.jpg"
+                class="img-fluid">
+              </br>
+              <h2>Básico</h2>
+              <h3>Atributos:</h3>
+              <h4>-Controle e gestão de mídias socias</h4>
+              <h4>-Alavacagem com desenvolvimento da imagem profissional do jogador(Eventos)</h4>
+              <h4>-Sem auxílio nas tranferências dos jogadores</h4>
+              <h4>-Sem consultoria financeira individual</h4>
+              <h2 style="color:blue">7% da Receita do profissional</h2>
+              <button class="btn btn-primary">Contratar Básico</button>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="caixa-texto">
+              <img src="https://http2.mlstatic.com/adesivo-letra-m-em-neon-art-decor-30-cm-x-42-cm-D_NQ_NP_900667-MLB41350751846_042020-F.jpg"
+                class="img-fluid">
+            </br>
+            <h2>Premium</h2>
+            <h3>Atributos:</h3>
+            <h4>-Controle e gestão de mídias socias</h4>
+            <h4>-Alavacagem com desenvolvimento da imagem profissional do jogador(Eventos)</h4>
+            <h4>-Controle total nas tranferências dos jogadores</h4>
+            <h4>-Sem consultoria financeira individual</h4>
+            <h2 style="color:blue">12% da Receita do profissional</h2>
+            <button class="btn btn-primary">Contratar Premium</button>
+          </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="caixa-texto">
+              <img src="https://http2.mlstatic.com/adesivo-letra-m-em-neon-art-decor-30-cm-x-42-cm-D_NQ_NP_900667-MLB41350751846_042020-F.jpg"
+                class="img-fluid">
+            </br>
+            <h2>VIP</h2>
+            <h3>Atributos:</h3>
+            <h4>-Controle e gestão de mídias socias</h4>
+            <h4>-Alavacagem com desenvolvimento da imagem profissional do jogador(Eventos)</h4>
+            <h4>-Controle total nas tranferências dos jogadores</h4>
+            <h4>-consultoria total financeira individual </h4>
+            <h2 style="color:blue">20% da Receita do profissional</h2>
+            <button class="btn btn-primary">Contratar VIP</button>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
